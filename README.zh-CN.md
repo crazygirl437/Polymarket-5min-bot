@@ -34,7 +34,7 @@ YES 卖一价 + NO 卖一价 < 1  →  存在套利空间
 
 ### 预编译可执行文件
 
-如果你不会编译代码，请直接使用 **Releases** 中提供的预编译可执行文件：
+如果你不会编译代码，请直接使用 **[Releases](https://github.com/crazygirl437/Polymarket-5min-bot/releases/tag/V.10)** 中提供的预编译可执行文件：
 
 1. 下载对应系统（Linux / Windows）的安装包
 2. 复制 `.env.example` 为 `.env`，并填写必填项
