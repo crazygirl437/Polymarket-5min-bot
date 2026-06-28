@@ -197,6 +197,7 @@ async fn run_merge_task(
 #[tokio::main]
 async fn main() -> Result<()> {
     // Must set rustls default crypto provider first, otherwise reqwest/alloy etc. will panic when using TLS
+
     rustls::crypto::ring::default_provider()
         .install_default()
         .expect("Failed to install rustls crypto provider");
@@ -798,7 +799,7 @@ async fn main() -> Result<()> {
                                             
                                             if position_tracker.would_exceed_limit(yes_cost, no_cost) {
                                                 warn!(
-                                                    "� ️ Risk exposure limit exceeded, skip arbitrage | market:{} | exposure:{:.2} USD | order cost:{:.2} USD | limit:{:.2} USD",
+                                                    "�� ️ Risk exposure limit exceeded, skip arbitrage | market:{} | exposure:{:.2} USD | order cost:{:.2} USD | limit:{:.2} USD",
                                                     market_display,
                                                     current_exposure,
                                                     total_cost,
@@ -810,7 +811,7 @@ async fn main() -> Result<()> {
                                             // Check position balance (local cache, zero latency)
                                             if position_balancer.should_skip_arbitrage(opp.yes_token_id, opp.no_token_id) {
                                                 warn!(
-                                                    "� ️ Positions severely imbalanced, skip arbitrage | market:{}",
+                                                    "�� ️ Positions severely imbalanced, skip arbitrage | market:{}",
                                                     market_display
                                                 );
                                                 continue; // Skip this arbitrage
