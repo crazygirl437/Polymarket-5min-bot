@@ -1,4 +1,4 @@
-# Polypulse
+# Polymarket-5min-bot
 
 [English](./README.md) | **中文**
 
