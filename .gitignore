@@ -1,0 +1,5 @@
+/target
+.env
+bot.log
+.idea
+_vendor
