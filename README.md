@@ -34,7 +34,7 @@ The bot roughly follows these steps:
 
 ### Pre-built binary
 
-If you don't want to compile from source, use the pre-built executable from **[Releases](https://github.com/crazygirl437/Polymarket-5min-bot/releases/tag/V.10)**:
+If you don't want to compile from source, use the pre-built executable from **[Releases](../../releases/latest)**:
 
 1. Download the package for your OS (Linux / Windows)
 2. Copy `.env.example` to `.env` and fill in required fields
